@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+ * @category ReadyMage
+ * @package ReadyMage\Logger
+ * @author Ricards Rikmanis <info@scandiweb.com / ricards@scandiweb.com>
+ * @copyright Copyright (c) 2021 Scandiweb, Ltd (https://scandiweb.com)
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="stderrHandler" type="Monolog\Handler\StreamHandler">
+        <arguments>
+            <argument name="stream" xsi:type="string">php://stderr</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\Logger\Monolog">
+        <arguments>
+            <argument name="handlers" xsi:type="array">
+                <item name="stderr" xsi:type="object">stderrHandler</item>
+                <item name="system" xsi:type="object">Magento\Framework\Logger\Handler\System</item>
+                <item name="debug" xsi:type="object">Magento\Framework\Logger\Handler\Debug</item>
+                <item name="syslog" xsi:type="object">Magento\Framework\Logger\Handler\Syslog</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

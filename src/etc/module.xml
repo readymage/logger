@@ -1,0 +1,9 @@
+<!--
+ * @category Scandiweb
+ * @package ReadyMage\Logger
+ * @author Ricards Rikmanis <info@scandiweb.com / ricards@scandiweb.com>
+ * @copyright Copyright (c) 2021 Scandiweb, Ltd (https://scandiweb.com)
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="ReadyMage_Logger" setup_version="1.0.0" />
+</config>

@@ -1,0 +1,34 @@
+{
+    "name": "readymage/logger",
+    "type": "magento2-module",
+    "description": "ReadyMage logger",
+    "keywords": [
+        "magento2",
+        "logger",
+        "utility",
+        "ReadyMage"
+    ],
+    "license": [
+        "OSL-3.0"
+    ],
+    "support": {
+        "email": "info@scandiweb.com"
+    },
+    "authors": [
+        {
+            "name": "Ricards RIkmanis",
+            "email": "ricards@scandiweb.com"
+        }
+    ],
+    "require": {
+        "magento/magento2-base": "^2.3"
+    },
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "ReadyMage\\Logger\\" : "src"
+        }
+    }
+}
