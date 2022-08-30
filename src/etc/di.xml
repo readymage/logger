@@ -18,7 +18,6 @@
                 <item name="stderr" xsi:type="object">stderrHandler</item>
                 <item name="system" xsi:type="object">Magento\Framework\Logger\Handler\System</item>
                 <item name="debug" xsi:type="object">Magento\Framework\Logger\Handler\Debug</item>
-                <item name="syslog" xsi:type="object">Magento\Framework\Logger\Handler\Syslog</item>
             </argument>
         </arguments>
     </type>
