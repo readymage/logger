@@ -21,7 +21,7 @@
         }
     ],
     "require": {
-        "magento/magento2-base": "^2.2.10"
+        "magento/magento2-base": "^2.3"
     },
     "autoload": {
         "files": [
